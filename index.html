@@ -171,7 +171,10 @@
             <p class="fw-bold text-dark">Rp. 250.000</p>
             <div class="d-flex justify-content-center">
               <div class="border-button">
-                <a href="https://wa.me/message/HA2QXPGZQS6CD1" target="_blank">
+                <!-- <a href="https://wa.me/message/HA2QXPGZQS6CD1" target="_blank">
+                  <i class="fa fa-shopping-cart me-2" aria-hidden="true"></i>Order now
+                </a> -->
+                <a href="#" onclick="sendWhatsAppMessage()">
                   <i class="fa fa-shopping-cart me-2" aria-hidden="true"></i>Order now
                 </a>
               </div>
@@ -434,6 +437,15 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    function sendWhatsAppMessage() {
+      var message = "Halo, Saya ingin memesan sekarang!";
+      var encodedMessage = encodeURIComponent(message);
+      var whatsappURL = "https://wa.me/message/HA2QXPGZQS6CD1?text=" + encodedMessage;
+      window.open(whatsappURL, "_blank");
+    }
+  </script>
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="assets/js/swiper.js"></script>
